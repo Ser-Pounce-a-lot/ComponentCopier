@@ -24,8 +24,7 @@ public class ComponentCopierUI : EditorWindow
     [MenuItem("Tools/Component Copier/Edit Blacklist")]
     static void EditBlacklist()
     {
-        Blacklist blacklist = Resources.FindObjectsOfTypeAll<Blacklist>().FirstOrDefault();
-        Selection.activeObject = blacklist;
+        Selection.activeObject = Blacklist.Instance;
     }
 
     [MenuItem("Tools/Component Copier/Open Component Copier")]
